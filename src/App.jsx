@@ -1,10 +1,8 @@
 import "./App.css";
-import Layout from "./container/layout/Layout";
-import Pagination from "./container/pagination/Pagination";
-import Tag from "./container/tag/Tag";
-import Videos from "./container/videos/Videos";
 import { Routes, Route } from "react-router-dom";
+import Layout from "./container/layout/RootLayout";
 import Home from "./pages/home/Home";
+import SingleVideo from "./pages/singleVideo/SingleVideo";
 
 function App() {
   return (
@@ -12,13 +10,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/single-video" element={<SingleVideo />} />
         </Route>
       </Routes>
-      {/* <Layout>
-        <Tag />
-        <Videos />
-        <Pagination />
-      </Layout> */}
     </>
   );
 }

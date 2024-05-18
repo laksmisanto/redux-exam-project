@@ -1,4 +1,5 @@
 import logo from "../../assets/lws.png";
+import search from "../../assets/search.svg";
 const Navbar = () => {
   return (
     <>
@@ -18,7 +19,7 @@ const Navbar = () => {
             </form>
             <img
               className="inline h-4 cursor-pointer"
-              src="./assets/search.svg"
+              src={search}
               alt="Search"
             />
           </div>

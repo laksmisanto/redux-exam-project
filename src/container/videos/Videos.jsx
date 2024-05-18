@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Videos = () => {
   return (
     <>
@@ -7,13 +9,13 @@ const Videos = () => {
             <div className="col-span-12 sm:col-span-6 md:col-span-3 duration-300 hover:scale-[1.03]">
               <div className="flex flex-col w-full">
                 <div className="relative">
-                  <a href="video.html">
+                  <Link to={"/single-video"}>
                     <img
                       src="https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg"
                       className="w-full h-auto"
                       alt="Some video title"
                     />
-                  </a>
+                  </Link>
 
                   <p className="absolute px-1 text-xs text-gray-100 bg-gray-900 right-2 bottom-2 py">
                     12:10
@@ -30,11 +32,11 @@ const Videos = () => {
                   </a>
 
                   <div className="flex flex-col">
-                    <a href="video.html">
+                    <Link to={"/single-video"}>
                       <p className="text-sm font-semibold text-slate-900">
                         Video title
                       </p>
-                    </a>
+                    </Link>
                     <a
                       className="mt-2 text-xs text-gray-400 hover:text-gray-600"
                       href="#"
